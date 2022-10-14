@@ -20,8 +20,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: https://github.com/Mariami223/interactive-rating-component 
+- Live Site URL: https://interactive-rating-component-86324d.netlify.app/ 
 
 
 ### Built with
