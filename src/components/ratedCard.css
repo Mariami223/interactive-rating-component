@@ -1,0 +1,30 @@
+.selected-card {
+  align-items: center;
+  padding: 45px 0;
+}
+
+.selected-number {
+  width: 193px;
+  height: 32px;
+  background-color: var(--darkblue);
+  border-radius: 22.5px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: var(--orange);
+}
+
+.selected-number h5 {
+  height: 24px;
+  align-items: center;
+  display: flex;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.selected-card p {
+  text-align: center;
+  padding-inline: 32px 40px;
+}

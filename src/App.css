@@ -1,38 +1,78 @@
+@import url("./components/primaryCard.css");
+@import url("./components/ratedCard.css");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+}
+
+:root {
+  --purewhite: rgba(255, 255, 255, 1);
+  --darkblue: rgba(38, 46, 56, 1);
+  --grey: rgba(150, 159, 173, 1);
+  --mediumgrey: rgba(124, 135, 152, 1);
+  --orange: rgba(252, 118, 20, 1);
+}
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 22px;
+  width: 412px;
+  height: 416px;
+  border-radius: 30px;
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  font-family: "Overpass", sans-serif;
 }
-
-.App-link {
-  color: #61dafb;
+.card-container h1 {
+  color: var(--purewhite);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 35px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card-container p {
+  color: var(--grey);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+/* mobile */
+@media (max-width: 575px) {
+  .card-container {
+    margin-inline: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  .btn-container {
+    padding-inline: 10px;
+  }
+}
+
+@media (max-width: 300px) {
+  .card-container {
+    width: 100%;
+  }
+  .number-container > div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--darkblue);
+    display: flex;
+    gap: 10px;
   }
 }

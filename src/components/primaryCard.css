@@ -1,0 +1,74 @@
+.rate-star-container {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: relative;
+  top: 32px;
+  left: 32px;
+  background-color: var(--darkblue);
+}
+.rate-star-container img {
+  position: absolute;
+  top: 15.5px;
+  left: 16px;
+}
+
+.card-content h1 {
+  padding-top: 30px;
+  padding-left: 32px;
+}
+.card-content p {
+  padding-top: 7px;
+  padding-inline: 32px;
+}
+
+.number-container {
+  display: flex;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 24px;
+  justify-content: space-between;
+}
+.number-container > button {
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  background-color: var(--darkblue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--mediumgrey);
+  cursor: pointer;
+  border-style: none;
+}
+.number-container > button:focus {
+  background-color: var(--orange);
+  color: var(--purewhite);
+}
+
+.number-container > button:focus {
+  background-color: var(--mediumgrey);
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.submit-button {
+  width: 341px;
+  height: 45px;
+  border-radius: 22.5px;
+  border-style: none;
+  background-color: var(--orange);
+  color: var(--purewhite);
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--purewhite);
+  color: var(--orange);
+}
