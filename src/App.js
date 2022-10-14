@@ -6,6 +6,7 @@ import RatedCard from "./components/RatedCard";
 function App() {
   const [submited, setSubmited] = useState(false);
   const [rate, setRate] = useState(0);
+
   return (
     <div className="App">
       {submited ? (
